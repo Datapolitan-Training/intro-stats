@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Introduction to Statistical Analysis - NYC DCAS</title>
+    <title>Introduction to Statistical Analysis</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="slide.css">
   </head>
@@ -11,18 +11,362 @@
 layout:true
 
 <p class="footer">
-<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Statistical Analysis: Additional Materials</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Statistical Analysis</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
 </p>
 ---
 
 class: center
 
-![img-center-50](images/dcas.png)
+![img-center-35](images/datapolitan.png)
+
+
 - - - 
 # Introduction to Statistical Analysis<br>Supplemental Materials
 ## Richard Dunks
 ### Follow along at: http://bit.ly/intro-stats
-![img-center-35](images/datapolitan.png)
+
+---
+class:center,middle
+> We are drowning in information and starving for knowledge.
+
+## Rutherford D. Roger
+
+---
+
+# Why Statistics?
+--
+
++ Tools for extracting meaning from data
+--
+
++ Commonly understood ways of communicating meaning to others
+
+---
+
+# Some Data Collection
++ Number of Siblings (not including yourself)
++ Years of service to NYC
++ Height (in inches)
+
+---
+
+# Mean
+--
+
++ A representative value for the data
+--
+
++ Usually what people mean by “average”
+--
+
++ Calculate by adding all the values together and dividing by the number instances
+--
+
++ Sensitive to extremes
+
+---
+
+# Median
+--
+
++ The “middle” value of a data set
+--
+
++ Center value of a data set with an odd number of values
+--
+
++ Sum of two middle values divided by 2 if the number of items in a data set is even
+--
+
++ Resistant to extreme values
+--
+
+![img-center-100](../images/median_balance.png)
+
+---
+
+# Median vs Mean
+![img-center-100](../images/mean_vs_median.png)
+
+---
+
+# Mode
+![img-right-50](../images/mode.png)
+--
+
++ The most frequent value in a dataset
+--
+
++ Often used for categorical data
+
+---
+
+# Histogram
+--
+
+![img-right-45](../images/hist2.png)
++ Charts the frequency of instances in the data
+--
+
++ Shows the frequency distribution
+--
+
++ Values are grouped into class intervals
+--
+
+![img-right-45](../images/hist1.png)
++ Best to have a consistent size to class intervals
+--
+
+
+&nbsp;<br>
+&nbsp;<br>
+.caption[http://mathematica.stackexchange.com/questions/59520/histogram-with-variable-bin-size]
+
+---
+
+class:center,middle
+# Creating a Histogram in Excel
+
+---
+
+# Installing Data Analysis ToolPak
+![img-right-75](../images/analysis_toolpak1.png)
++ File
++ Options
++ Add-ins
++ Manage
++ “Go…”
+
+---
+
+# Installing Data Analysis ToolPak
+![img-center-50](../images/analysis_toolpak2.png)
+
+---
+
+# Setup Your Bins
+![img-right-20](../images/bins.png)
++ Use an empty column and label it “Bins”
++ Start with the max of the first bin
++ Create an entry for each bin you want
++ Use a formula to save time
+
+---
+
+# Creating a Histogram
+## .center[Under the Data Ribbon]
+![img-center-65](../images/analysis_toolpak3.png)
+
+---
+
+# Creating a Histogram
+![img-center-100](../images/create_hist1.png)
+
+---
+
+# Creating a Histogram
+![img-center-60](../images/create_hist2.png)
+
+---
+
+# Creating a Histogram
+![img-center-100](../images/create_hist3.png)
+
+---
+
+class:center,middle
+# Distributions of Data
+
+---
+
+# Normal(-ish) Distribution
+![img-center-90](../images/dist_normal_rev.png)
+
+---
+
+# Long-tail Distribution
+![img-center-95](../images/dist_lt_rev.png)
+
+---
+
+# Bi-Modal Distribution
+![img-center-100](../images/dist_bm_rev.png)
+
+---
+
+# Measures of Central Tendency
+--
+
++ Quantitative data tends to cluster around some central value
+--
+
++ Contrasts with the spread of data around that center (i.e. the variability in the data)
+--
+
++ Mean is a more precise measure and more often used
+--
+
++ Median is better when there are extreme outliers
+--
+
++ Mode is used when the data is categorical (as opposed to numeric)
+
+---
+
+class:center,middle
+# Measuring Variability
+
+---
+
+# Range
+--
+
++ The gap between the minimum value and the maximum value
+--
+
++ Calculated by subtracting the minimum from the maximum
+--
+
++ Use the `MAX` and `MIN` functions in Excel
+
+---
+
+# Quantiles
+![img-right-50](../images/iqr.png)
+--
+
++ Median splits the data set into two equal groups
+--
+
++ Quartiles split the data into four equal groups
+--
+
++ First quartile is 0-25% of the data
+--
+
++ Second quartile is 25-50% of the data
+--
+
++ Third quartile is 50-75% of the data
+--
+
++ Fourth quartile is 75-100% of the data
+--
+
++ Use the `QUARTILE` function in Excel
+---
+
+# Interquartile Range
+--
+
++ “Middle” 50% of data (between 1st Quartile and 3rd Quartile)
+--
+
+![img-center-65](../images/iqr.png)
+
+
+---
+
+# Outliers
+![img-right-35](../images/outlier.png)
+--
+
++ Any data points less than 1.5x the IQR or greater than 1.5x the IQR are considered outliers
+--
+
++ Helps identify data points that may skew the analysis
+--
+
++ Focus on the “meat” of the data
+--
+
+
+# &nbsp;
+.caption[http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/ ]
+
+---
+
+class:center,middle
+# Do We Have Any Outliers in Our Data?
+
+---
+
+# Standard Deviation
+--
+
++ The average distance of each data point from the mean
+--
+
++ Larger the standard deviation, the greater the spread
+--
+
+![img-center-100](../images/std1.png)
+
+---
+
+# Standard Deviation
+![img-center-100](../images/std_breakdown.png)
+
+---
+
+# Measures of Variability
+--
+
++ Describe the distribution of our data
+--
+
++ Range (Maximum – Minimum)
+--
+
++ Inter-quartile Range
+--
+
++ Standard Deviation
+--
+
++ Identification of outliers (1.5 x IQR)
+
+---
+
+# Descriptive Statistics
+--
+
++ Quantitatively describe the main features of a dataset
+--
+
++ Help distinguish distributions and make them comparable
+
+---
+
+# Exploratory Data Analysis
+--
+
++ Goal -> Discover patterns in the data
+--
+
++ Understand the context
+--
+
++ Summarize fields
+--
+
++ Use graphical representations of the data
+--
+
++ Explore outliers
+
+--
+
+### Tukey, J.W. (1977). Exploratory data analysis. Reading, MA: Addison-Wesley.
+
+---
+
+class:center,middle
+# Let's Try That Again
+## [Vehicle Collisions in NYC](http://www.datapolitan.com/Data_Analytics_Classes/class_materials/data/20160401_0630_NYPD_Motor_Vehicle_Collisions.xlsx)
+
+
 
 ---
 
@@ -59,10 +403,11 @@ class: center
 
 ---
 
-# Thank You
-+ [richard[at]datapolitan[dot]com](mailto:richard[at]datapolitan[dot]com)
-+ http://blog.datapolitan.com
-+ [@datapolitan](https://twitter.com/Datapolitan)
+# .center[Contact Information]
+## Richard Dunks
++ Email: richard[at]datapolitan[dot]com
++ Website: http://www.datapolitan.com
++ Twitter: [@datapolitan](https://twitter.com/datapolitan)
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
