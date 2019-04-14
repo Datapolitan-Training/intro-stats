@@ -4,3 +4,5 @@ data/_rejects/*
 *.qgs*
 *.pptx
 prep/
+.ipynb_checkpoints/
+*.ipynb
