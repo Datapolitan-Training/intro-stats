@@ -32,6 +32,10 @@ img[alt=img-left-20]{
   width:20%;
   float:left;
 }
+img[alt=img-left-25]{
+  width:25%;
+  float:left;
+}
 img[alt=img-left-30]{
   width:30%;
   float:left;
@@ -71,6 +75,10 @@ img[alt=img-left-bottom]{
 }
 img[alt=img-right-10]{
   width:10%;
+  float:right;
+}
+img[alt=img-right-15]{
+  width:15%;
   float:right;
 }
 img[alt=img-right-20]{
@@ -128,6 +136,10 @@ img[alt=img-right-65]{
 }
 img[alt=img-right-70]{
   width:70%;
+  float:right;
+}
+img[alt=img-right-75]{
+  width:75%;
   float:right;
 }
 img[alt=img-right-bottom]{
@@ -192,6 +204,9 @@ img[alt=img-center-85]{
 }
 img[alt=img-center-90]{
   width:90%;
+}
+img[alt=img-center-95]{
+  width:95%;
 }
 img[alt=img-center-100]{
   width:100%;
@@ -302,10 +317,12 @@ p.footer{
 .gray {
   color: gray;
 }
+.dp-orange {
+  color: #e77b4e;
+}
 
 form{
   text-align: center;
-
 }
 
 .caption{
@@ -313,4 +330,10 @@ form{
   text-align: center;
   color: gray;
   font-size:0.75em;
+}
+
+.remark-slide-number {
+  font-size:0.75em;
+  bottom:5px;
+  right:10px;
 }

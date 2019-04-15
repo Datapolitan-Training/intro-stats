@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Introduction to Statistical Analysis - NYC DCAS</title>
+    <title>Introduction to Statistical Analysis</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="slide.css">
   </head>
@@ -10,19 +10,828 @@
 
 layout:true
 
+<div class="header" style="display:block; text-align: left; color:gray; font-size:1em; position: fixed; top: 0px; left: 0px; height: 30px;vertical-align:middle;margin:7px 0 0 0;width:100%;background: #fcfcfc;
+background: -moz-linear-gradient(top, #fcfcfc 0%, #d1d1d1 100%); 
+background: -webkit-linear-gradient(top, #fcfcfc 0%,#d1d1d1 100%);
+background: linear-gradient(to bottom, #fcfcfc 0%,#d1d1d1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1',GradientType=0 );">
+  <img src="images/datapolitan_transparent_small.png" style="position: fixed;top: 2px; left: 5px; width: 14%;">
+  <p style="display:block;text-align:left;color:gray;font-size:1em; position: fixed; top: 0px; left: 155px; height: 30px;vertical-align:middle;margin:7px 0 0 0; ">Introduction to Statistical Analysis</p>
+</div>
+<div class="footer" style="display:block;color:gray;position:fixed;bottom: 0px;left:0px;height:30px;vertical-align:middle;margin:0 0 0 0;width:100%;background: #fcfcfc;background: -moz-linear-gradient(top, #fcfcfc 0%, #d1d1d1 100%);background: -webkit-linear-gradient(top, #fcfcfc 0%,#d1d1d1 100%);background: linear-gradient(to bottom, #fcfcfc 0%,#d1d1d1 100%);sfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1',GradientType=0 );">
 <p class="footer">
-<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Statistical Analysis: Additional Materials</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-</p>
+  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Statistical Analysis</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+  </p>
+</div>
+
+
 ---
 
-class: center
+class: center, middle
 
-![img-center-50](images/dcas.png)
+![img-center-50](images/datapolitan.png)
+
+# Introduction to Statistical Analysis
+
 - - - 
-# Introduction to Statistical Analysis<br>Supplemental Materials
-## Richard Dunks
+## Instructor: Richard Dunks
 ### Follow along at: http://bit.ly/intro-stats
-![img-center-35](images/datapolitan.png)
+#### See the code at: http://bit.ly/intro-stats-code
+
+---
+
+class:center,middle
+# Welcome
+
+???
++ Facilitators introduce themselves
++ Facilitators (respectfully) assert authority to be teaching material
++ Facilitators begin creating a safe, comfortable container for participants
+
+---
+
+# A Few Ground Rules
+--
+
++ Step up, step back
+--
+
++ Be curious and ask questions!
+--
+
++ Assume noble regard and positive intent
+--
+
++ Respect multiple perspectives 
+--
+
++ Listen deeply
+--
+
++ Be present (phone, email, social media, etc.)
+
+---
+
+# Introductions and <a href="http://bit.ly/stats-data" target="_blank">Data Collection</a>
++ Who are you?
++ Where do you work?
++ How many siblings do you have (not including yourself)?
++ How long have you worked for NYC in years?
++ What is your height (in inches)?
+
+???
++ Instructor uses [Google sheet to collect information](http://bit.ly/stats-data) as students introduce themselves
+
+---
+
+# Goals for the Course
+--
+
++ Review descriptive statistics in the context of operational decision making
+--
+
++ Discuss correlation and simple linear regression analysis in the context of operational decision making
+--
+
++ Introduce decision modeling and their use
+--
+
++ Practice calculating descriptive statistics, calculating correlation, and developing predictive models in Excel
+
+
+---
+
+# Key Takeaways for the Course
+--
+
++ You will be more familiar with basic descriptive statistics
+--
+
++ You will be better able to describe correlation and simple linear regression
+--
+
++ You will better understand the value of decision models in operational decision making
+--
+
++ You will be practiced in calculating descriptive statistics, calculating correlation, and developing predictive models in Excel
+
+---
+
+# Key Assumptions
+--
+
++ You’ve had some previous experience with statistics and probability
+--
+
++ You’re familiar with using Excel to manipulate data and calculate values
+--
+
++ You’re familiar with using formulas in Excel
+
+---
+
+# Disclaimer
+--
+
++ I’m not a statistician
+--
+
++ You won’t be a statistician by the end of this course
+--
+
++ I often apply statistical tools and understanding in the work I do
+--
+
++ I’m assuming you all do the same, which is why you’re here
+
+---
+
+# Goals for this Morning
+--
+
++ Review basic statistical measures
+--
+
++ Practice using statistics in real-world applications
+--
+
++ Familiarize you with how to use Excel for statistical analysis
+---
+
+class:center,middle
+> We are drowning in information and starving for knowledge.
+
+## John Naisbitt
+
+---
+
+# Why Statistics?
+--
+
++ Tools for extracting meaning from data
+--
+
++ Commonly understood ways of communicating meaning to others
+
+---
+
+class:center,middle
+# Let’s run the statistics on our class today
+## Download <a href="http://bit.ly/stats-data" target="_blank">the data for the class</a>
+
+![img-center-65](images/data_download_box.png)
+
+
+---
+
+# Mean
+--
+
++ A representative value for the data
+--
+
++ Usually what people mean by “average”
+--
+
++ Calculate by adding all the values together and dividing by the number instances
+--
+
++ Sensitive to extremes
+--
+
+
+## .dp-orange[Calculate the means (number of siblings, years of service, and height) for our class today]
+
+---
+
+# Median
+--
+
++ The “middle” value of a data set
+--
+
++ Center value of a data set with an odd number of values
+--
+
++ Sum of two middle values divided by 2 if the number of items in a data set is even
+--
+
++ Resistant to extreme values
+--
+
+![img-center-100](images/median_balance.png)
+--
+
+
+## .dp-orange[Calculate the medians for our class today]
+
+
+---
+exclude:true
+# Median vs Mean
+![img-center-100](images/mean_vs_median.png)
+
+---
+
+# Mode
+![img-right-50](images/mode.png)
+--
+
++ The most frequent value in a dataset
+--
+
++ Often used for categorical data
+--
+
+#### &nbsp;
+<br>
+## .dp-orange[Calculate the medians for our class today]
+
+---
+
+# Median vs Mean vs Mode
+![img-center-80](https://upload.wikimedia.org/wikipedia/commons/d/de/Comparison_mean_median_mode.svg)
+
+By Cmglee (Own work) <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> or <a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>, <a href="https://commons.wikimedia.org/wiki/File%3AComparison_mean_median_mode.svg">via Wikimedia Commons</a>
+
+---
+
+# Histogram
+--
+
+![img-right-45](images/hist2.png)
++ Charts the frequency of instances in the data
+--
+
++ Shows the frequency distribution
+--
+
++ Values are grouped into class intervals
+--
+
+![img-right-45](images/hist1.png)
++ Best to have a consistent size to class intervals
+--
+
+
+&nbsp;<br>
+&nbsp;<br>
+.caption[http://mathematica.stackexchange.com/questions/59520/histogram-with-variable-bin-size]
+
+---
+
+class:center,middle
+# Creating a Histogram in Excel for Height
+
+---
+
+# Installing Data Analysis ToolPak
+![img-right-75](images/analysis_toolpak1.png)
++ File
++ Options
++ Add-ins
++ Manage
++ “Go…”
+
+---
+
+# Installing Data Analysis ToolPak
+![img-center-50](images/analysis_toolpak2.png)
+
+---
+
+# Setup Your Bins
+![img-right-20](images/bins.png)
++ Use an empty column and label it “Bins”
++ Start with the max of the first bin
++ Create an entry for each bin you want
++ Use a formula to save time
+
+---
+
+# Creating a Histogram (Height)
+## .center[Under the Data Ribbon]
+![img-center-65](images/analysis_toolpak3.png)
+
+---
+
+# Creating a Histogram (Height)
+![img-center-100](images/create_hist1.png)
+
+---
+
+# Creating a Histogram (Height)
+![img-center-60](images/create_hist2.png)
+
+---
+
+# Creating a Histogram (Height)
+![img-center-100](images/create_hist3.png)
+
+---
+
+class:center,middle
+# Distributions of Data
+
+---
+
+# Normal(-ish) Distribution
+![img-center-90](images/dist_normal_rev.png)
+
+---
+
+# Long-tail Distribution
+![img-center-95](images/dist_lt_rev.png)
+
+---
+
+# Bi-Modal Distribution
+![img-center-100](images/dist_bm_rev.png)
+
+---
+
+# Measures of Central Tendency
+--
+
++ Quantitative data tends to cluster around some central value
+--
+
++ Contrasts with the spread of data around that center (i.e. the variability in the data)
+--
+
++ Mean is a more precise measure and more often used
+--
+
++ Median is better when there are extreme outliers
+--
+
++ Mode is used when the data is categorical (as opposed to numeric)
+
+---
+
+class:center,middle
+# Measuring Variability
+
+---
+
+# Range
+--
+
++ The gap between the minimum value and the maximum value
+--
+
++ Calculated by subtracting the minimum from the maximum
+--
+
++ Use the `MAX` and `MIN` functions in Excel
+
+---
+
+# Quantiles
+![img-right-50](images/iqr.png)
+--
+
++ Median splits the data set into two equal groups
+--
+
++ Quartiles split the data into four equal groups
+--
+
++ First quartile is 0-25% of the data
+--
+
++ Second quartile is 25-50% of the data
+--
+
++ Third quartile is 50-75% of the data
+--
+
++ Fourth quartile is 75-100% of the data
+--
+
++ Use the `QUARTILE` function in Excel
+---
+
+# Interquartile Range
+--
+
++ “Middle” 50% of data (between 1st Quartile and 3rd Quartile)
+--
+
+![img-center-65](images/iqr.png)
+
+
+---
+
+# Outliers
+![img-right-35](images/outlier.png)
+--
+
++ Any data points less than 1.5x the IQR or greater than 1.5x the IQR are considered outliers
+--
+
++ Helps identify data points that may skew the analysis
+--
+
++ Focus on the “meat” of the data
+--
+
+
+# &nbsp;
+.caption[http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/ ]
+
+---
+
+class:center,middle
+# Do We Have Any Outliers in Our Data?
+
+---
+
+# Standard Deviation
+--
+
++ The average distance of each data point from the mean
+--
+
+![img-center-40](images/stdev_formula.png)
+--
+
++ Larger the standard deviation, the greater the spread
+--
+
+![img-center-100](images/std1.png)
+
+---
+
+# Standard Deviation
+![img-center-90](images/std_breakdown.png)
+
+---
+
+# Measures of Variability
+--
+
++ Describe the distribution of our data
+--
+
++ Range (Maximum – Minimum)
+--
+
++ Inter-quartile Range
+--
+
++ Standard Deviation
+--
+
++ Identification of outliers (1.5 x IQR)
+
+---
+
+# Descriptive Statistics
+--
+
++ Quantitatively describe the main features of a dataset
+--
+
++ Help distinguish distributions and make them comparable
+--
+
++ 5 number summary
+--
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- Minimum
+--
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- 1st Quartile
+--
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- Median
+--
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- 3rd Quartile
+--
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- Maximum
+
+---
+
+# Exploratory Data Analysis
+--
+
++ Goal -> Discover patterns in the data
+--
+
++ Understand the context
+--
+
++ Summarize fields
+--
+
++ Use graphical representations of the data
+--
+
++ Explore outliers
+
+--
+
+### Tukey, J.W. (1977). Exploratory data analysis. Reading, MA: Addison-Wesley.
+
+---
+
+class:center,middle
+# 15 MIN BREAK
+![img-center-100](https://imgs.xkcd.com/comics/boyfriend.png)
+
+Source: https://xkcd.com/539/
+
+---
+
+class:center,middle
+# Let's Try That Again
+# [Vehicle Collisions in NYC](data/20160401_0630_NYPD_Motor_Vehicle_Collisions.xlsx)
+
+---
+
+# PivotTables
+???
++ Facilitator introduces concept and usage of pivottables to the class
++ Best to introduce by having someone describe how they use a pivottable in their work (connects to the day-to-day concretely)
+--
+
++ A data summarization tool
+--
+
++ Useful to quickly understand data
+--
+
++ Can use to graph data totals
+--
+
+
+![img-center-100](images/pt1.png)
+
+---
+
+# Creating a PivotTable
+![img-center-60](images/pt2.png)
+???
++ Facilitator describes the steps to creating a pivottable in Excel
++ Please don't model selecting all data before selecting "Insert Pivottable" -> creates `(blank)` field in pivottable
++ Just allow to select all data by itself
+--
+
++ Should default to all your data .red[unless you have any cells selected]
+???
++ Remind participants not to have any data selected when inserting a pivottable. When this comes up in class (because someone did it), use it as a teachable moment
+--
+
++ Should default to a new worksheet
+
+---
+
+# Creating a PivotTable
+![img-right-40](images/pt3.png)
+## Drag and drop fields to visualize
++ Row labels 
++ Values
++ Filter
++ Column Labels
+
+---
+exclude:true
+# Creating a PivotTable
+![img-center-100](images/pt4.png)
+
+---
+
+---
+
+# Correlations
+![img-full](images/corr1.png)
+### How do we measure this relationship?
+
+---
+
+# Coefficient of Correlation
+--
+
++ Quantifies the amount of shared variability between variables
+--
+
++ Ranges between -1 and +1 
+--
+
++ Negative numbers are inversely proportional
+--
+
++ Positive numbers are directly proportional
+--
+
++ The closer to either -1 or +1, the greater the correlation
+
+---
+
+# Coefficient of Correlation
+![img-full](images/corr3.png)
+http://www.statisticshowto.com/what-is-the-correlation-coefficient-formula/
+
+---
+
+# Coefficient of Correlation
+![img-center-80](images/corr2.png)
+
+http://pixshark.com/correlation-examples.htm 
+
+---
+
+# Correlations - Height and Weight
+![img-full](images/corr1.png)
+[Download the data](https://github.com/datapolitan/CenterForGovernmentExcellence/blob/gh-pages/data/height_weight.xlsx?raw=true)
+
+---
+
+![img-full](images/calc_corr.png)
+
+---
+# Or we could use Excel
+![img-center-large](images/corr7.png)
+
+
+---
+
+# Correlations - Recycling and Median Income
+![img](images/corr6.png)
+### These are even slightly more correlated (r=0.88478) [Check it yourself](https://github.com/datapolitan/CenterForGovernmentExcellence/blob/gh-pages/data/2013_NYC_CD_MedianIncome_Recycle.xlsx?raw=true)
+
+http://iquantny.tumblr.com/post/79846201258/the-huge-correlation-between-median-income-and
+
+---
+
+# Correlations
+![img-center-large](images/corr4.png)
+
+---
+
+# Correlations
+![img-full](images/corr5.png)
+
+---
+
+# Correlations
+![img-full](images/corr5.png)
+## Correlation does not imply causation
+
+
+---
+
+class:middle,center
+# Predictive Modeling
+
+---
+
+# Prediction
+--
+
++ Knowing the relationship between variables (i.e. the correlation), we can predict values based on the relationship
+--
+
++ Can estimate the magnitude as well as the general trend
+--
+
++ More data points, the better the prediction
+--
+
++ Example -> Knowing the relationship between median income and recycling rates, what can we predict about recycling rates as median incomes grow in communities?
+
+---
+
+# Linear Regression
+--
+
++ Using the known relationship between continuous variables, we can predict unseen values
+--
+
++ Assumes relationship is linear
+
+---
+
+# Formula for a line
+![img](images/lr1.png)
+##### http://www.algebra-class.com/slope-formula.html 
+
+---
+
+# Formula for a line
+![img](images/lr2.png)
+##### http://www.mathwarehouse.com/algebra/linear_equation/slope-of-a-line.php
+
+---
+
+# Formula for a line
+--
+
++ Draw a line that minimizes the distance between each point
+--
+
++ “Line of best fit” -> minimizes the sum of squared residuals
+
+--
+
+![img](images/lr3.png)
+##### http://nbviewer.ipython.org/github/justmarkham/DAT4/blob/master/notebooks/08_linear_regression.ipynb
+
+---
+
+# Linear Regression
+--
+
++ Characteristics of the line defines the relationship
+--
+
++ Slope -> relationship between independent and dependent variable (how Y increases per unit of X)
+--
+
++ Intercept -> expected mean value of Y at X=0
+--
+
++ Values along the line are the predicted values for any given value X
+
+---
+
+# Displaying a Trendline in Excel
+![img-left-40](images/lr4.png)
+--
+![img-right-50](images/lr5.png)
+
+---
+
+# Calculating coefficients in Excel
+![img-full](images/lr6.png)
+
+---
+
+# Calculating coefficients in Excel
+![img-full](images/lr7.png)
+
+---
+
+# Calculating coefficients in Excel
+![img-full](images/lr8.png)
+
+---
+
+# Linear Regression Line
+![img](images/lr9.png)
+
+--
+
+### RecyclingRate = 0.0000001869 * MedianIncome + 0.07480414
+---
+
+# What is this telling us?
+### RecyclingRate = 0.0000001869 * MedianIncome + 0.07480414
+--
+
++ Every dollar increase in median income will increase the recycling rate by about 0.0000001869
+--
+
++ If the median income was zero, the recycling rate would be about 0.07480414
+
+---
+
+class:center,middle
+# We've created a model to make predictions!
+##&nbsp;
+#&nbsp;
+
+---
+
+class:center,middle
+# We've created a model to make predictions!
+##&nbsp;
+# The predictions are just not very good
+
+---
+
+class:center,middle
+![img-full](images/data_meme.png)
+
+---
+
+class:center,middle
+![img-center-80](images/big-data-meme-star-trek.jpg)
+
+---
+
+# How is Linear Regression Useful in Cities?
+--
+
++ Make predictions
+--
+
++ Identify outliers
+
+
 
 ---
 
@@ -59,10 +868,11 @@ class: center
 
 ---
 
-# Thank You
-+ [richard[at]datapolitan[dot]com](mailto:richard[at]datapolitan[dot]com)
-+ http://blog.datapolitan.com
-+ [@datapolitan](https://twitter.com/Datapolitan)
+# .center[Contact Information]
+## Richard Dunks
++ Email: richard[at]datapolitan[dot]com
++ Website: http://www.datapolitan.com
++ Twitter: [@datapolitan](https://twitter.com/datapolitan)
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
