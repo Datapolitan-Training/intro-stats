@@ -317,6 +317,9 @@ p.footer{
 .gray {
   color: gray;
 }
+.dp-orange {
+  color: #e77b4e;
+}
 
 form{
   text-align: center;
