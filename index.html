@@ -281,7 +281,7 @@ By Cmglee (Own work) <a href="http://creativecommons.org/licenses/by-sa/3.0">CC 
 ---
 
 class:center,middle
-# Creating a Histogram in Excel
+# Creating a Histogram in Excel for Height
 
 ---
 
@@ -309,23 +309,23 @@ class:center,middle
 
 ---
 
-# Creating a Histogram
+# Creating a Histogram (Height)
 ## .center[Under the Data Ribbon]
 ![img-center-65](images/analysis_toolpak3.png)
 
 ---
 
-# Creating a Histogram
+# Creating a Histogram (Height)
 ![img-center-100](images/create_hist1.png)
 
 ---
 
-# Creating a Histogram
+# Creating a Histogram (Height)
 ![img-center-60](images/create_hist2.png)
 
 ---
 
-# Creating a Histogram
+# Creating a Histogram (Height)
 ![img-center-100](images/create_hist3.png)
 
 ---
@@ -453,6 +453,9 @@ class:center,middle
 + The average distance of each data point from the mean
 --
 
+![img-center-40](images/stdev_formula.png)
+--
+
 + Larger the standard deviation, the greater the spread
 --
 
@@ -461,7 +464,7 @@ class:center,middle
 ---
 
 # Standard Deviation
-![img-center-100](images/std_breakdown.png)
+![img-center-90](images/std_breakdown.png)
 
 ---
 
@@ -493,23 +496,22 @@ class:center,middle
 + Help distinguish distributions and make them comparable
 --
 
-
-## 5 number summary
++ 5 number summary
 --
 
-+ Minimum
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- Minimum
 --
 
-+ 1st Quartile
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- 1st Quartile
 --
 
-+ Median
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- Median
 --
 
-+ 3rd Quartile
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- 3rd Quartile
 --
 
-+ Maximum
+<br>&nbsp;&nbsp;&nbsp;&nbsp;- Maximum
 
 ---
 
@@ -599,6 +601,235 @@ class:center,middle
 exclude:true
 # Creating a PivotTable
 ![img-center-100](images/pt4.png)
+
+---
+
+---
+
+# Correlations
+![img-full](images/corr1.png)
+### How do we measure this relationship?
+
+---
+
+# Coefficient of Correlation
+--
+
++ Quantifies the amount of shared variability between variables
+--
+
++ Ranges between -1 and +1 
+--
+
++ Negative numbers are inversely proportional
+--
+
++ Positive numbers are directly proportional
+--
+
++ The closer to either -1 or +1, the greater the correlation
+
+---
+
+# Coefficient of Correlation
+![img-full](images/corr3.png)
+http://www.statisticshowto.com/what-is-the-correlation-coefficient-formula/
+
+---
+
+# Coefficient of Correlation
+![img-center-80](images/corr2.png)
+
+http://pixshark.com/correlation-examples.htm 
+
+---
+
+# Correlations - Height and Weight
+![img-full](images/corr1.png)
+[Download the data](https://github.com/datapolitan/CenterForGovernmentExcellence/blob/gh-pages/data/height_weight.xlsx?raw=true)
+
+---
+
+![img-full](images/calc_corr.png)
+
+---
+# Or we could use Excel
+![img-center-large](images/corr7.png)
+
+
+---
+
+# Correlations - Recycling and Median Income
+![img](images/corr6.png)
+### These are even slightly more correlated (r=0.88478) [Check it yourself](https://github.com/datapolitan/CenterForGovernmentExcellence/blob/gh-pages/data/2013_NYC_CD_MedianIncome_Recycle.xlsx?raw=true)
+
+http://iquantny.tumblr.com/post/79846201258/the-huge-correlation-between-median-income-and
+
+---
+
+# Correlations
+![img-center-large](images/corr4.png)
+
+---
+
+# Correlations
+![img-full](images/corr5.png)
+
+---
+
+# Correlations
+![img-full](images/corr5.png)
+## Correlation does not imply causation
+
+
+---
+
+class:middle,center
+# Predictive Modeling
+
+---
+
+# Prediction
+--
+
++ Knowing the relationship between variables (i.e. the correlation), we can predict values based on the relationship
+--
+
++ Can estimate the magnitude as well as the general trend
+--
+
++ More data points, the better the prediction
+--
+
++ Example -> Knowing the relationship between median income and recycling rates, what can we predict about recycling rates as median incomes grow in communities?
+
+---
+
+# Linear Regression
+--
+
++ Using the known relationship between continuous variables, we can predict unseen values
+--
+
++ Assumes relationship is linear
+
+---
+
+# Formula for a line
+![img](images/lr1.png)
+##### http://www.algebra-class.com/slope-formula.html 
+
+---
+
+# Formula for a line
+![img](images/lr2.png)
+##### http://www.mathwarehouse.com/algebra/linear_equation/slope-of-a-line.php
+
+---
+
+# Formula for a line
+--
+
++ Draw a line that minimizes the distance between each point
+--
+
++ “Line of best fit” -> minimizes the sum of squared residuals
+
+--
+
+![img](images/lr3.png)
+##### http://nbviewer.ipython.org/github/justmarkham/DAT4/blob/master/notebooks/08_linear_regression.ipynb
+
+---
+
+# Linear Regression
+--
+
++ Characteristics of the line defines the relationship
+--
+
++ Slope -> relationship between independent and dependent variable (how Y increases per unit of X)
+--
+
++ Intercept -> expected mean value of Y at X=0
+--
+
++ Values along the line are the predicted values for any given value X
+
+---
+
+# Displaying a Trendline in Excel
+![img-left-40](images/lr4.png)
+--
+![img-right-50](images/lr5.png)
+
+---
+
+# Calculating coefficients in Excel
+![img-full](images/lr6.png)
+
+---
+
+# Calculating coefficients in Excel
+![img-full](images/lr7.png)
+
+---
+
+# Calculating coefficients in Excel
+![img-full](images/lr8.png)
+
+---
+
+# Linear Regression Line
+![img](images/lr9.png)
+
+--
+
+### RecyclingRate = 0.0000001869 * MedianIncome + 0.07480414
+---
+
+# What is this telling us?
+### RecyclingRate = 0.0000001869 * MedianIncome + 0.07480414
+--
+
++ Every dollar increase in median income will increase the recycling rate by about 0.0000001869
+--
+
++ If the median income was zero, the recycling rate would be about 0.07480414
+
+---
+
+class:center,middle
+# We've created a model to make predictions!
+##&nbsp;
+#&nbsp;
+
+---
+
+class:center,middle
+# We've created a model to make predictions!
+##&nbsp;
+# The predictions are just not very good
+
+---
+
+class:center,middle
+![img-full](images/data_meme.png)
+
+---
+
+class:center,middle
+![img-center-80](images/big-data-meme-star-trek.jpg)
+
+---
+
+# How is Linear Regression Useful in Cities?
+--
+
++ Make predictions
+--
+
++ Identify outliers
 
 
 
