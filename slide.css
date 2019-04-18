@@ -339,6 +339,13 @@ form{
   font-size:0.5em;
 }
 
+.caption-right{
+  display: block;
+  text-align: right;
+  color: gray;
+  font-size:0.75em;
+}
+
 .remark-slide-number {
   font-size:0.75em;
   bottom:5px;
