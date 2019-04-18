@@ -907,6 +907,32 @@ class:center,middle
 
 ---
 
+# Making Decisions in a Resource Constrained World
+???
++ Facilitator invites participants to reflect on whether they have enough resources for the work they do (they don't)
++ Facilitator invites them to reflect on what they often come up short on
+--
+
++ Types of constraints
+--
+
+<br>    - Money
+--
+
+<br>    - Time
+--
+
+<br>    - Resources
+--
+
+<br>    - Political Concerns
+--
+
++ Need ways to optimize around what’s available
+
+
+---
+
 # Decision Modeling
 --
 
@@ -916,7 +942,7 @@ class:center,middle
 + Meant to improve or optimize the performance of a system
 --
 
-+ Other terms 
++ Other terms:
 --
 
 <br>    - Operations research 
@@ -928,31 +954,45 @@ class:center,middle
 
 # Decision Modeling Process
 ![img-center-100](images/dm1.png)
+???
++ Facilitator describes an example real-world system or process that exists for which we're trying to optimize
 
 ---
 
 # Decision Modeling Process
 ![img-center-100](images/dm2.png)
-
+???
++ Facilitator describes the process of modeling that system, however imperfectly into a model of how that system or process works 
 ---
 
 # Decision Modeling Process
 ![img-center-100](images/dm3.png)
-
+???
++ Facilitator describes the means by which we model the system is by setting up a series of equations and inequalities
++ These represent how the system works (how many of X can be processed at a time, how many Y hours it takes to produce a given amount, etc.)
 ---
 
 # Decision Modeling Process
 ![img-center-100](images/dm4.png)
+???
++ From manipulating these equations and inequalities, we arrive at some conclusions about how the system works and can be optimized
 
 ---
 
 # Decision Modeling Process
 ![img-center-100](images/dm5.png)
+???
++ We then make some correlation between the model and the real world system: how does this impact how we manage our resources in the real world?
++ Examples include staffing, expenditure, or other allocation of resources
 
 ---
 
 # Decision Modeling Process
 ![img-center-100](images/dm_final.png)
+???
++ The final step is to implement the conclusions in the real world
++ Because our model is only an approximation, then we need to assess the real-world impact
++ Making a change in the "real world" will also impact our models, as they need to change to reflect the new way in which the system operates
 
 ---
 
@@ -1012,9 +1052,176 @@ class:center,middle
 
 class:center,middle
 # Now let’s optimize!
-![img-center-80](images/improvement.jpg)
+![img-center-60](images/improvement.jpg)
 .caption[Photo by [Jungwoo Hong](https://unsplash.com/photos/cYUMaCqMYvI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/improvement?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)]
+
+## Click to [open our practice dataset](data/decision_model.xlsx)
+
 ---
+
+# Setup Spreadsheet
+![img-center-100](images/dm_setup1.png)
+
+---
+
+# Sum Assigned Agents
+![img-center-100](images/dm_setup2.png)
+
+---
+
+# Add Total Number of Agents (1000)
+![img-center-100](images/dm_setup3.png)
+
+---
+
+# Sum Revenue
+![img-center-100](images/dm_setup4.png)
+
+---
+
+# Calculating Revenue
+--
+
++ Number of Agents 
+--
+
++ Multiplied by the number of tickets they can write (200) 
+--
+
++ Multiplied by the fine in that borough
+--
+
++ Multiplied by the percentage of fines collected in that borough 
+--
+
++ Multiplied by the density of illegally parked cars 
+--
+
+
+```
+# of Agents * 200 * Fine * % Collect * Density of Illegally Parked Cars
+```
+
+---
+
+# Calculating Revenue - Example 
+
+```
+# of Agents * 200 * Fine * % Collect * Density of Illegally Parked Cars
+```
+--
+
++ 100 Agents in Manhattan
+--
+
++ Max number of tickets an agent can write is 200
+--
+
++ Fine is $90
+--
+
++ They collect 75% of fines
+--
+
++ The density of illegally parked cars is 40%
+--
+
+
+```
+Estimated Revenue = 100 * 200 * 0.4 * 90 * 0.75 = $540,000
+```
+
+---
+
+# Add Revenue Calculation
+```
+# of Agents * 200 * Fine * % Collect * Density of Illegally Parked Cars
+```
+
+![img-center-100](images/dm_setup5.png)
+
+---
+
+# Calculating Number of Tickets
+
+---
+
+# Add Ticketing Function
+![img-center-100](images/dm_setup6.png)
+
+---
+
+# Spreadsheet Setup
+![img-center-100](images/dm_setup7.png)
+
+---
+
+class:center,middle
+# Now we’re ready to optimize the number of assigned agents
+![img-center-100](images/dm_setup8.png)
+
+---
+
+# Constraints
+--
+
++ Number of assigned agents must be greater than or equal to minimum but less than or equal to the maximum
+--
+
++ The number of tickets can’t exceed the estimated number of illegally parked cars
+--
+
++ The total number of assigned agents must be less than or equal to 1000
+
+---
+
+# Constraints
++ Number of assigned agents must be greater than or equal to minimum but less than or equal to the maximum
+
+![img-center-75](images/dm_config5.png)
+
+---
+
+# Constraints
++ The number of tickets can’t exceed the estimated number of illegally parked cars
+
+![img-center-75](images/dm_config6.png)
+
+---
+
+# Constraints
++ The total number of assigned agents must be less than or equal to 1000
+
+![img-center-75](images/dm_config7.png)
+
+---
+
+# Final Touches
+--
+
+![img-center-60](images/dm_config8a.png)
++ Set solving method to `Simplex LP`
+--
+
+![img-right-40](images/dm_config8b.png)
++ Check over parameters and then click `Solve`
+
+---
+
+# Results
+![img-center-100](images/solver_final.png)
+
+---
+
+# Results
++ If you like the results, click `OK`
+
+![img-center-70](images/solver_results.png)
+--
+
++ Otherwise you can go back to adjust parameters
+---
+
 class:center,middle
 # Wrap-Up
 ![img-center-50](http://what-if.xkcd.com/imgs/a/120/harvester.png)
