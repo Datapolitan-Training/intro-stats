@@ -1079,6 +1079,63 @@ class:center,middle
 
 ---
 
+class: center,middle
+# Now for those systems of equations...
+
+<iframe src="https://giphy.com/embed/5Uww26Bo0A68XGlAvz" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/finalspacetbs-5Uww26Bo0A68XGlAvz">via GIPHY</a></p>
+
+---
+
+# Calculating Number of Tickets
+--
+
++ Number of Agents
+--
+
++ Multiplied by the number of tickets they can write (200) 
+--
+
++ Multiplied by the density of illegally parked cars 
+--
+
+```
+Number of Tickets = # of Agents * 200 * Density of Illegally Parked Cars
+```
+
+---
+
+# Calculating Number of Tickets - Example 
+
+```
+Number of Tickets = # of Agents * 200 * Density of Illegally Parked Cars
+```
+--
+
++ 100 Agents in Manhattan
+--
+
++ Max number of tickets an agent can write is 200
+--
+
++ The density of illegally parked cars is 40%
+--
+
+
+```
+Estimated Number of Tickets = 100 * 200 * 0.4 = 8,000
+```
+
+---
+
+# Add Ticketing Calculation
+```
+Ticketed = # of Agents * 200 * Density of Illegally Parked Cars
+```
+
+![img-center-100](images/dm_setup6.png)
+
+---
+
 # Calculating Revenue
 --
 
@@ -1099,7 +1156,7 @@ class:center,middle
 
 
 ```
-# of Agents * 200 * Fine * % Collect * Density of Illegally Parked Cars
+Revenue = # of Agents * 200 * Fine * % Collect * Density of Illegally Parked Cars
 ```
 
 ---
@@ -1107,7 +1164,7 @@ class:center,middle
 # Calculating Revenue - Example 
 
 ```
-# of Agents * 200 * Fine * % Collect * Density of Illegally Parked Cars
+Revenue = # of Agents * 200 * Fine * % Collect * Density of Illegally Parked Cars
 ```
 --
 
@@ -1128,37 +1185,49 @@ class:center,middle
 
 
 ```
-Estimated Revenue = 100 * 200 * 0.4 * 90 * 0.75 = $540,000
+Estimated Revenue = 100 * 200 * 90 * 0.75 * 0.4 = $540,000
 ```
 
 ---
 
 # Add Revenue Calculation
 ```
-# of Agents * 200 * Fine * % Collect * Density of Illegally Parked Cars
+Revenue = # of Agents * 200 * Fine * % Collect * Density of Illegally Parked Cars
 ```
 
 ![img-center-100](images/dm_setup5.png)
 
 ---
 
-# Calculating Number of Tickets
-
----
-
-# Add Ticketing Function
-![img-center-100](images/dm_setup6.png)
-
----
-
 # Spreadsheet Setup
 ![img-center-100](images/dm_setup7.png)
 
+## Everything is now setup as a set of relationships (equations)
+
 ---
 
-class:center,middle
-# Now we’re ready to optimize the number of assigned agents
+# Excel will find optimal number of agents
 ![img-center-100](images/dm_setup8.png)
+
+---
+
+# Installing Solver
+![img-right-75](images/solver_install1.png)
++ File
++ Options
++ Add-ins
++ Manage
++ “Go…”
+
+---
+
+# Installing Solver
+![img-center-50](images/solver_install2.png)
+
+---
+
+# Using Solver
+![img-center-100](images/solver_install3.png)
 
 ---
 
