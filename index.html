@@ -399,17 +399,19 @@ class:center,middle
 + Calculated by subtracting the minimum from the maximum
 --
 
-+ Use the `MAX` and `MIN` functions in Excel
++ Use the [`MAX`](https://support.office.com/en-us/article/MAX-function-e0012414-9ac8-4b34-9a47-73e662c08098) and [`MIN`](https://support.office.com/en-us/article/MIN-function-61635d12-920f-4ce2-a70f-96f202dcc152) functions in Excel to calculate this for our data
 
 ---
 
 # Quartiles
-![img-right-50](images/iqr.png)
 ???
-+ 
++ Facilitator introduces concept by discussing percentiles
++ Prompts participants with the scenario: "Your child comes home and says they scored on the 98th percentile on the SAT. What does that mean?"
++ The answer is that they scored at or above 98% of the students who took the SAT
++ This introduces the idea important to understanding Quartiles as breaking up the data into 4 equal portions of the data
 --
+![img-center-55](images/iqr_alt.png)
 
-+ Median splits the data set into two equal groups
 --
 
 + Quartiles split the data into four equal groups
@@ -427,7 +429,8 @@ class:center,middle
 + Fourth quartile is 75-100% of the data
 --
 
-+ Use the `QUARTILE` function in Excel
++ Use the [`QUARTILE`](https://support.office.com/en-us/article/QUARTILE-function-93cf8f62-60cd-4fdb-8a92-8451041e1a2a) function in Excel to calculate this
+
 ---
 
 # Interquartile Range
@@ -436,8 +439,9 @@ class:center,middle
 + “Middle” 50% of data (between 1st Quartile and 3rd Quartile)
 --
 
-![img-center-65](images/iqr.png)
+![img-center-80](images/iqr.png)
 
+.caption[[Image source](https://community.qlik.com/t5/Qlik-Design-Blog/Recipe-for-a-Box-Plot/ba-p/1471745?)]
 
 ---
 
@@ -462,6 +466,11 @@ class:center,middle
 
 class:center,middle
 # Do We Have Any Outliers in Our Data?
+
+???
++ First calculate the Upper Limit -> participants will usually calculate the formula as `=1.5 * IQR + Q3`
++ In calculating the Lower Limit -> participants will use the same order to get `=1.5 * IQR - Q1`, which leads to an incorrect result. Make sure to point this out to them
++ Reflect on any outliers with the class 
 
 ---
 
