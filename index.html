@@ -797,22 +797,162 @@ class:center,middle
 ---
 
 # Calculating Descriptive Statistics
-![img-center-65](images/311_ds3.png)
+![img-right-45](images/311_ds3.png)
+--
+
++ What's missing?
+--
+
++ Q1
+--
+
++ Q3
+--
+
++ IQR
+--
+
++ Upper Bound
+--
+
++ Lower Bound
+--
+
+
+## .dp-orange[Calculate those now<br>(trust us, it'll be useful)]
 
 ---
 
-# Calculating Descriptive Statistics
-![img-center-100](images/311_ds4.png)
+# Creating a Histogram
+![img-center-65](images/311_hist1.png)
+
+---
+
+# Creating a Histogram
+![img-center-100](images/311_hist2.png)
+
+---
+
+# Creating a Histogram - Bin Size 100
+![img-center-100](images/311_hist3.png)
+
+---
+
+# Creating a Histogram - Bin Size 100
+![img-center-100](images/311_hist4.png)
+
+---
+
+# Creating a Histogram - Bin Size 50
+![img-center-80](images/311_hist5.png)
+
+---
+
+# Creating a Histogram - Bin Size 50
+![img-center-90](images/311_hist6.png)
+
+---
+
+# Creating a Histogram - Formatting Histogram
+![img-center-100](images/311_hist7.png)
+
+---
+
+# Creating a Histogram
+![img-center-85](images/311_hist8.png)
+
+---
+
+class:center,middle
+# Do these tell a true and compelling story?
+# &nbsp;
+
+---
+
+class:center,middle
+# Do these tell a true and compelling story?
+# What do we do about that?
+
+---
+
+# Things to Think About
+--
+
++ Do we need to display all of the data?
+--
+
++ What data do we keep? 
+--
+
++ How do we determine what to show?
+--
+
++ How do we be clear about what we're not showing?
+
+---
+
+# Removing Outliers (Using 1.5 x IQR)
+![img-center-95](images/311_hist9_crop.png)
+
+---
+
+# Removing Outliers (Using 1.5 x IQR)
+![img-left-25](images/311_hist9a.png)
+--
+![img-right-40](images/311_hist9b.png)
+
+---
+
+# What Do We Know?
+--
+
++ The median time a noise complaint is open is 2 hours
+--
+
++ 50% of the noise complaints are closed between 1-4 hours (median is 2 hours, IQR is 3 hours)
+--
+
++ There is a long tail of complaints that take longer to close (range of 1158 hours, standard deviation of 36 hours)
+
+---
+
+class:center,middle
+# 15 Min Break
+![img-center-70](https://imgs.xkcd.com/comics/decline.png)
+[Source](https://xkcd.com/523/)
 
 ---
 
 # Correlations
+--
+
++ Values tend to have a relationship
+--
+
++ That relationship can be of several types
+--
+
+<br>    - Proportional (increase in one increases the other)
+--
+
+<br>    - Inversely proportional (increase in one decreases the other)
+--
+
++ Example -> Height and weight
+
+<!-- ## [Click to download some example data](data/height_weight.xlsx) -->
+
+---
+
+# Correlations - Height and Weight
 ![img-center-90](images/corr1.png)
 ### How do we measure this relationship?
 
 ---
 
 # Coefficient of Correlation
+???
++ Facilitator provides examples of r values with their corresponding visualizations
 --
 
 + Quantifies the amount of shared variability between variables
@@ -821,13 +961,13 @@ class:center,middle
 + Ranges between -1 and +1 
 --
 
-+ Negative numbers are inversely proportional
+<br>    - Negative numbers are inversely proportional
 --
 
-+ Positive numbers are directly proportional
+<br>    - Positive numbers are directly proportional
 --
 
-+ The closer to either -1 or +1, the greater the correlation
+<br>    - The closer to either -1 or +1, the greater the correlation
 
 ---
 
@@ -838,34 +978,51 @@ http://www.statisticshowto.com/what-is-the-correlation-coefficient-formula/
 ---
 
 # Coefficient of Correlation
-![img-center-80](images/corr2.png)
+![img-center-85](images/corr2.png)
 
 http://pixshark.com/correlation-examples.htm 
 
 ---
 
+![img-center-100](images/flight_corr.png)
+???
++ Facilitator provides example of situation where correlation is high because the variables aren't independent (flight departure delay and flight arrival delay)
+
+---
+
 # Correlations - Height and Weight
-![img-center-100](images/corr1.png)
-[Download the data](https://github.com/datapolitan/CenterForGovernmentExcellence/blob/gh-pages/data/height_weight.xlsx?raw=true)
+![img-center-90](images/corr1.png)
+
+## [Download the data so we can check this out](https://github.com/datapolitan/CenterForGovernmentExcellence/blob/gh-pages/data/height_weight.xlsx?raw=true)
 
 ---
 
-class:middle
-![img-center-100](images/calc_corr.png)
+# We can use the formula...
+![img-center-90](images/calc_corr.png)
 
 ---
 
-# Or we could use Excel
+# ...Or we could use Excel
 ![img-center-90](images/corr7.png)
 
 
 ---
 
+class:center,middle
+# [Let's Try That Again](data/2013_NYC_CD_MedianIncome_Recycle.xlsx)
+
+---
+
 # Correlations - Recycling and Median Income
-![img-center-100](images/corr6.png)
+![img-center-95](images/corr6.png)
 ### These are even slightly more correlated (r=0.88478) [Check it yourself](https://github.com/datapolitan/CenterForGovernmentExcellence/blob/gh-pages/data/2013_NYC_CD_MedianIncome_Recycle.xlsx?raw=true)
 
 http://iquantny.tumblr.com/post/79846201258/the-huge-correlation-between-median-income-and
+
+---
+
+# Correlations - Recycling and Median Income
+![img-center-100](images/corr6b.png)
 
 ---
 
@@ -885,6 +1042,21 @@ http://iquantny.tumblr.com/post/79846201258/the-huge-correlation-between-median-
 ![img-center-100](images/corr5.png)
 ## Correlation does not imply causation
 
+---
+
+# Correlation of Determination
+--
+
++ The percentage of variance in one variable shared with the other
+--
+
++ More shared variability implies a stronger relationship
+--
+
++ Calculate by squaring the correlation coefficient
+--
+
+<br>    - Ex. The correlation of determination for median income vs recycling rates is 78%
 
 ---
 
